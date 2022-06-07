@@ -1,0 +1,258 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #222;
+  color: #EEE;
+  font-family: verdana;
+}
+
+#username-frame {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+#username-frame:hover {
+  background-color: #555;
+}
+
+.content {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+}
+
+.game {
+  width: 60%;
+  height: 100%;
+  border-right: 2px solid #555;
+}
+
+#player-info {
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 30px;
+  text-align: center;
+}
+
+#available-info {
+  margin-bottom: 50px;
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+}
+
+#game-frame {
+  margin: auto;
+  width: 304px;
+  border-top: 1px solid #FFF;
+}
+
+.game-row {
+  display: flex;
+  margin: 0px;
+  width: 303px;
+  height: 100px;
+  border-left: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+}
+
+.game-field {
+  width: 100px;
+  height: 100%;
+  border-right: 1px solid #FFF;
+}
+
+#game-players-info {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.chat {
+  position: relative;
+  top: 0px;
+  padding: 0px;
+  background: inherit;
+}
+
+#chat-messages {
+  position: absolute;
+  top: 0px;
+  bottom: 40px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  max-height: 100%;
+  overflow: auto;
+  background: inherit;
+}
+
+.chat-message {
+  margin: 0px;
+  margin-top: 4px;
+  margin-left: 2px;
+  padding: 1px;
+  padding-left: 4px;
+  overflow-x: hidden;
+}
+
+.own-chat-message {
+  background-color: #404040;
+}
+
+.system-chat-message {
+  color: #50C0FF;
+}
+
+.error-chat-message {
+  color: #FF0000;
+}
+
+.info-chat-message {
+  color: #00FF00;
+}
+
+.chat-message-time {
+  display: none;
+}
+
+.chat-message:hover .chat-message-time {
+  display: inline;
+}
+.chat-message[clicked="true"] .chat-message-time {
+  display: inline;
+}
+
+.chat-input-frame {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 1px solid #555;
+  background: inherit;
+}
+
+#chat-input {
+  width: 100%;
+  border: none;
+  background: inherit;
+  color: inherit;
+  font-size: 18px;
+}
+
+.button {
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 15px;
+  background: none;
+  background-color: #999;
+  cursor: default;
+  transition-duration: 0.3s;
+}
+
+.button:hover {
+  background-color: #0C0;
+  cursor: pointer;
+}
+
+.end-game-buttons-table {
+  margin: auto;
+  border: none;
+  padding: 0px;
+  background: inherit;
+}
+
+.end-game-buttons-table tbody {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  background: inherit;
+}
+
+.end-game-buttons-table tr {
+  margin: 0px;
+  border: none;
+  padding: 0px;
+  background: inherit;
+}
+
+.end-game-buttons-table td {
+  margin: 0px;
+  border: none;
+  padding: 5px;
+  background: inherit;
+}
+
+#custom-game-container {
+  position: fixed;
+  display: none;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+#custom-game-panel {
+  margin: auto;
+  width: 350px;
+  margin-top: 200px;
+  margin-bottom: 200px;
+  border-width: 1px;
+  border-color: #555;
+  border-style: solid;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 20px;
+  overflow: auto;
+
+  background-color: #222;
+}
+
+#custom-game-form {
+  display: block;
+}
+
+.custom-game-input {
+  display: block;
+  margin: 3px auto;
+  margin-bottom: 10px;
+  border: 1px solid #000000;
+  padding: 3px;
+  min-width: 300px;
+  font-size: inherit;
+}
+
+.custom-game-checkbox-container {
+  border: none;
+  width: 200px;
+}
+
+.custom-game-checkbox {
+  display: inline;
+  border: none;
+}
+
+.custom-game-checkbox-text {
+  padding-left: 5px;
+}
+
+.custom-game-input-submit {
+  width: 300px;
+}

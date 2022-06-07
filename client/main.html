@@ -1,0 +1,66 @@
+<html lang=de>
+  <head>
+    <link rel="stylesheet" href="style.css"></link>
+    <title>TicTacToe</title>
+  </head>
+  <body>
+    <div id="username-frame" onclick="var newUsername = prompt('Neuen Namen eingeben:'); if(newUsername) socket.emit('rename', newUsername);">
+
+    </div>
+    <table class="content">
+      <tbody style="background: inherit">
+        <tr style="background: inherit">
+          <td class="game">
+            <div id="player-info">
+
+            </div>
+            <div id="available-info">
+
+            </div>
+            <div id="game-frame">
+
+            </div>
+            <div id="game-players-info">
+              <span id="player1">?</span> &#10231; <span id="player2">?</span>
+            </div>
+          </td>
+          <td class="chat">
+            <div id="chat-messages">
+
+            </div>
+            <div class="chat-input-frame">
+              <table style="width: 100%">
+                <form>
+                  <td><input id="chat-input" type="text" placeholder="Nachricht eingeben..." autocomplete="off" spellcheck="true"></input></td>
+                  <td style="width: 10%"><input id="chat-input-button" class="button" type="submit" value="Senden"></button></td>
+                </form>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+
+    <div id="custom-game-container">
+      <script>hideCustomGamePanelOnNextClick = true;</script>
+      <div style="width: 100%; height: 100%" onclick="if(hideCustomGamePanelOnNextClick) {showCustomGamePanel(false);} hideCustomGamePanelOnNextClick = true;">
+        <div id="custom-game-panel" onclick="hideCustomGamePanelOnNextClick = false;">
+          <form id="custom-game-form">
+            <b class="custom-game-input" style="font-size: 20px; text-align: center; border: none">Neues Spiel</b>
+            <input type="number" id="custom-game-width" class="custom-game-input" placeholder="Breite"></input>
+            <input type="number" id="custom-game-height" class="custom-game-input" placeholder="Höhe"></input>
+            <input type="number" id="custom-game-minLength" class="custom-game-input" placeholder="Mindestlänge einer Reihe"></input>
+            <div class="custom-game-input custom-game-checkbox-container"><input type="checkbox" id="custom-game-fallThrough" class="custom-game-checkbox"><span class="custom-game-checkbox-text">Durchfall</span></input></div>
+            <input type="submit" id="custom-game-submit" class="custom-game-input button custom-game-input-submit" value="Spiel starten" onclick="startCustomGame()"></input>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+<img src="https://zouchmagazine.com/wp-content/uploads/2015/08/troll-face-600x25 0.png"></img>
+-->

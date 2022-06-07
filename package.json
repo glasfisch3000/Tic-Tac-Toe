@@ -1,0 +1,16 @@
+{
+  "name": "lol",
+  "version": "1.0.0",
+  "description": "looool",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "author": "Jakob Danckwerts",
+  "license": "ISC",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
+  }
+}
