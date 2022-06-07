@@ -4,7 +4,8 @@
   "description": "looool",
   "main": "app.js",
   "scripts": {
-    "test": "node app.js"
+    "test": "node app.js",
+    "start": "node app.js"
   },
   "author": "Jakob Danckwerts",
   "license": "ISC",
