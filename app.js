@@ -61,8 +61,8 @@ io.on("connection", (socket) => {
   database.connect(socket.handshake.address);
   clients.push(socket);
   logger.log("player connected: " + socket.handshake.address);
-  logger.log("" + JSON.stringify(socket.request)) // socket.request.connection.remoteAddress
-  logger.log("" + JSON.stringify(socket.conn)) // socket.conn.transport.socket._socket.remoteAddress
+  //logger.log("" + JSON.stringify(socket.request)) // socket.request.connection.remoteAddress
+  //logger.log("" + JSON.stringify(socket.conn)) // socket.conn.transport.socket._socket.remoteAddress
 
   distributePlayer();
 
