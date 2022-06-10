@@ -9,7 +9,6 @@ const database = require(__dirname + "/games.js");
 server.get("/", (req, res) => {
   //logger.log("http request: /main.html");
   res.sendFile(__dirname + "/client/main.html");
-  console.log(req)
 })
 server.get("/style.css", (req, res) => {
   //logger.log("http request: /style.css");
