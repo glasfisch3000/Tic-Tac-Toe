@@ -1,0 +1,6 @@
+# useless macos shit
+.DS_Store
+*/.DS_Store
+
+# nope
+node_modules/*
