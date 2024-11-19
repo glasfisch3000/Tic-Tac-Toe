@@ -1,7 +1,7 @@
 const express = require("express");
 const server = express();
 const http = require("http").Server(server);
-const port = process.env.PORT;
+const port = process.env.PORT || 3000;
 
 const logger = require(__dirname + "/logger.js");
 const database = require(__dirname + "/games.js");
